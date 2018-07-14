@@ -58,7 +58,7 @@ export class Glossary_page extends React.Component {
     checkPage = () => {
         let gua = this.props.match.params.gua;
         let number = parseInt(this.props.match.params.id, 10);
-        axios.get(`http://159.65.227.85:9000/api_glossary/${gua}/${number}`)
+        axios.get(`https://ichingapi.herokuapp.com/api_glossary/${gua}/${number}`)
             .then( response => {
                 let result = response.data;
                 this.setState({

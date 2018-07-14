@@ -19,7 +19,7 @@ export class History extends React.Component {
     }
     
     getHistory = () => {
-        axios.get("http://159.65.227.85:9000/api_history")
+        axios.get("https://ichingapi.herokuapp.com/api_history")
             .then(response => {
                 let history = clone(response.data);
                 this.setState({

@@ -10,7 +10,7 @@ export class Currentanswer extends React.Component {
         let question = clone(this.props.question);
         let gua = clone(this.props.guas);
         let toGua = clone(this.props.toGua);
-        axios.post("http://159.65.227.85:9000/api_question", {
+        axios.post("https://ichingapi.herokuapp.com/api_question", {
             question: question, 
             gua: gua,
             toGua : toGua
