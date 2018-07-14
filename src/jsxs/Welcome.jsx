@@ -11,7 +11,7 @@ export class Welcome extends React.Component {
                 <img className="welcome-img" src={require("../imgs/welcome.jpg")} />
                 <div className="taiji">
                 <Link to="/main"><img className="yingyang spin" src={require("../imgs/yingyang.png")} alt="yingyang" /></Link>
-                <h2>Ask <span>I-Ching</span></h2>
+                <h2>Ask <span>Yingyang</span></h2>
                 </div>
                 <div className="bar bar-bottom"></div>
             </div>

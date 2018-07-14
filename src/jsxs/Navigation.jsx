@@ -7,7 +7,7 @@ export class Navigation extends React.Component {
         return (
             <div className="nav-back">
                 <ul>
-                    <Navilink link="/ask" des="Ask I-Ching" />
+                    <Navilink link="/ask" des="Ask Yingyang" />
                     <Navilink link="/history" des="History" />
                     <Navilink link="/glossary" des="Glossary" />
                     <Navilink link="/links" des="Other Chinese culture" />

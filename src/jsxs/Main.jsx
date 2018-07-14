@@ -12,7 +12,7 @@ export class Main extends React.Component {
     render() {
         return (
             <div className="main">
-                <div className="grid-item item1">{this.makeOption("/ask", "占卜", "Ask I-Ching")}</div>
+                <div className="grid-item item1">{this.makeOption("/ask", "占卜", "Ask Yingyang")}</div>
                 <div className="grid-item item2">{this.makeOption("/history", "歷史", "History")}</div>
                 <div className="grid-item item5"><img src={require("../imgs/taiji.png")} /></div>
                 <div className="grid-item item3">{this.makeOption("/glossary", "詞典", "Glossary")}</div>
