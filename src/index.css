@@ -649,6 +649,7 @@ body {
 /*history page*/
 .history-back {
   display: flex;
+  overflow: scroll;
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
