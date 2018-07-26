@@ -12,6 +12,7 @@ import { faInfoCircle, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Otherculture } from './jsxs/Otherculture.jsx';
 import { History } from './jsxs/History.jsx';
 import { Glossary } from './jsxs/Glossary.jsx';
+import { Login } from './jsxs/Login.jsx';
 import { Glossary_page } from './jsxs/Glossary_page.jsx';
 
 library.add(faInfoCircle, faArrowRight );
@@ -25,13 +26,13 @@ class App extends React.Component {
     <Switch>
     <Route exact path="/" component={ Welcome } />
     <Route path="/main" component={ Main } />
+    <Route path="/login" component={ Login } />
     <Route exact path="/ask" component={ Askform } />
     <Route exact path="/ask/guas" component={ Coins } />
     <Route exact path="/ask/results" component={ Results } />
     <Route path="/links" component={ Otherculture } />
     <Route path="/history" component={ History } />
     <Route path="/glossary/:gua/:id" component={ Glossary_page } />
-
     <Route exact path="/glossary" component={ Glossary } />
     </Switch>
     </Provider>

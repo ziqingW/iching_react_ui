@@ -1,0 +1,90 @@
+/*login page*/
+.login-form {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../imgs/darkbackground.png");
+}
+.login-form form{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  opacity: 0.8;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px black;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #222;
+}
+.login-form form h4 {
+  line-height: 12px;
+  font-size: 22px;
+}
+.login-form form input {
+  border: 2px solid #222;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: right;
+  margin: 5px 0;
+}
+.login-input-wrap{
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-inputs {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-message {
+  width: 100%;
+  margin: 0;
+}
+.login-buttons {
+    display: flex;
+    justify-content: center;
+}
+.login-form button {
+  font-size: 15px;
+  padding: 4px 0;
+  width: 80px;
+  height: 40px;
+  border: none;
+  margin: 0 10px 36px 10px;
+  background: white;
+  font-weight: 500;
+  border: 1px solid #222;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px black;
+}
+
+@media screen and (max-width: 500px) {
+/*login page*/
+.login-form form{
+  margin-top: 30%;
+  height: 360px;
+}
+}
+
+@media screen and (min-width: 501px) {
+    /*login page*/
+.login-form form{
+  margin-top: 190px;
+  height: 360px;
+  max-width: 400px;
+}
+.login-form button:hover {
+  cursor: pointer;
+  color: #1A73E8;
+  border-color: #1A73E8;
+}
+}

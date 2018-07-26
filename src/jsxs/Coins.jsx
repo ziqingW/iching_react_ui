@@ -5,6 +5,9 @@ import { Navigation } from './Navigation.jsx';
 import { Question } from './Question.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Footer } from './Footer.jsx';
+import { User } from './User.jsx';
+import '../css/coins.css';
+
 const clone = require('clone');
 
 export class Coins extends React.Component {
@@ -70,6 +73,7 @@ export class Coins extends React.Component {
     render () {
         return (
             <div className="coin-back">
+            <User />
             <Navigation />
             <div className="question-panel">
             <Question />
@@ -85,7 +89,7 @@ export class Coins extends React.Component {
                         <button className={this.state.buttonToggles[i] ? "show-button" : "hide-button"} onClick={ () => this.tossCoin(i)}>Toss</button>
                         <div className={this.state.coinToggles[i] ? "show-coins" : "hide-coins"}>
                         <img className="coin-img" src={require("../imgs/" + coin )} alt={"coin result" + i} />
-                        <img className={this.props.changingLines[i] == 1 ? "mutate-line line-img" : "line-img"} src={require("../imgs/" + (this.props.guas.lines[i] == 1 ? "straight.png" : "dash.png") )} alt={"line result" + i} />
+                        <img className={this.props.changingLines[i] === 1 ? "mutate-line line-img" : "line-img"} src={require("../imgs/" + (this.props.guas.lines[i] === 1 ? "straight.png" : "dash.png") )} alt={"line result" + i} />
                         </div>
                     </div>
                     </div>

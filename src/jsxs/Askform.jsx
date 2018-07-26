@@ -3,9 +3,10 @@ import { Redirect } from 'react-router-dom';
 import { askGua } from '../actions.js';
 import { connect } from 'react-redux';
 import { Navigation } from './Navigation.jsx';
+import { User } from './User.jsx';
 import { Footer } from './Footer.jsx';
 import axios from 'axios';
-
+import '../css/askform.css';
 
 export class Askform extends React.Component {
     constructor (props) {
@@ -25,7 +26,7 @@ export class Askform extends React.Component {
     
     askGua = e => {
         e.preventDefault();
-        axios.get("https://ichingapi.herokuapp.com/api")
+        axios.get("http://159.65.227.85:9000/api")
             .then( response => {
                 let results = response.data;
                 results.question = this.state.question;
@@ -42,6 +43,7 @@ export class Askform extends React.Component {
     render () {
         return ( this.state.redirect ? <Redirect to="/ask/guas" />
                 : (<div className="form-back">
+                <User />
                 <Navigation />
                 <form onSubmit={this.askGua}>
                     <p>Any question to ask the Prophet?</p>

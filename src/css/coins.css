@@ -1,0 +1,209 @@
+.tutorial-back {
+  position: absolute;
+  z-index: 20;
+  background: #fafafa;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  top: 0;    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+.tutorial-contents {
+  width: 85%;  
+  max-width: 600px;
+  background: linear-gradient(141deg, #fff 0%, #ddd 51%, #eee 75%);
+  padding: 0.5em 2em;
+  border: 2px solid #757575;
+  opacity: 0.9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 12%;
+  box-shadow: 1px 1px 5px #1A73E7;
+  line-height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tutorial-contents h3 {
+  text-align: center;  
+  color: #0c8918;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.tutorial-warning {
+  color: red;
+}
+.tutorial-sub {
+  color: #1A73E7;
+}
+.tutorial-contents button {
+  width: 70px;
+  height: 30px;
+  background: red;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.8em;
+  border: 1px solid red;
+  box-shadow: 2px 2px 5px grey;
+  margin-bottom:20px;
+}
+.question-panel {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-icon {
+  margin-left: 20px;
+  color: #0c8918;
+  font-size: 1.2em;
+}
+.question-content {
+  font-family: 'Acme', sans-serif;
+  text-align: center;
+  color: #808080;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.question-content span {
+  color: #1a0dab;
+  margin-left: 12px;
+}
+  /*coins detail*/
+.coins {
+  display : flex;
+  width: 80%;
+  max-width: 700px;
+  flex-direction : column-reverse;
+  margin-bottom: 10px;
+}
+.coin-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #808080;
+  margin: 5px 0;
+  padding: 5px 0;
+}
+.coin-order {
+  font-weight: bold;
+  margin-right: 2%;
+  font-family: 'Acme', sans-serif;
+  font-size: 1.1em;
+}
+.coin-panel {
+  display: flex;
+  align-items: center;
+}
+.line-img {
+  width : 30%;
+  margin-left: 10%;
+}
+.mutate-line {
+  filter : opacity(40%);
+}
+.show-button {
+  display : block;
+  font-family: 'Acme', sans-serif;
+  width: 80px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px grey;
+  background: #f47142;
+  color: white;
+  font-size: 0.8em;
+}
+.hide-button {
+  visibility: hidden;
+}
+.show-coins {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hide-coins {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+.make-gua {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1em;
+  margin-left: 0.5em;
+  color: #1A73E8;
+}
+.final-button {
+    width: 90%;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 20px;
+}
+.final-button button {
+  width: 55px;
+  height: 32px;
+  border: 1px solid #0c8918;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px grey;
+  background: #0c8918;
+  color: white;
+  font-size: 0.7em;
+}
+.result-short {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+    .coin-img {
+      width: 160px;
+}
+.final-button div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+}
+.final-button button {
+  margin-top: 6px;
+}
+}
+@media screen and (min-width: 501px) {
+    .coin-img {
+  width: 220px;
+}
+.question-icon:hover {
+  cursor: pointer;
+}
+.tutorial-contents button:hover {
+  cursor: pointer;
+}
+.show-button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 2px black;
+}
+.final-button div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+}
+.final-button button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 3px black;
+}
+.final-button button {
+  margin-left: 3em;
+}
+}
