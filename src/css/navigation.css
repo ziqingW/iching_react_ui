@@ -11,6 +11,10 @@
   width: 100%;
   justify-content: space-between;
 }
+.nav-back hr {
+  margin-top: -5px;
+  margin-bottom: 20px;
+}
 .nav-back ul li a {
       text-decoration: none;
       font-family: 'Roboto', sans-serif;

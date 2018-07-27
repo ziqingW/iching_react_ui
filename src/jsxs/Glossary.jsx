@@ -2,14 +2,16 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { Navigation } from './Navigation.jsx';
 import { Footer } from './Footer.jsx';
+import { User } from './User.jsx';
+import '../css/glossary.css';
 
 export class Glossary extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            hex: 0,
-            tri: 0,
+            hex: "",
+            tri: "",
             show_hex : false,
             show_tri : false
         };
@@ -50,6 +52,7 @@ export class Glossary extends React.Component {
             : (this.state.show_tri ? <Redirect to={"/glossary/tri/" + this.state.tri} />
             : 
             (<div className="coin-back">
+                <User />
                 <Navigation />
                     <div className="glossary-back">
                         <h3>Search the symbols</h3>

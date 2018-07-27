@@ -26,7 +26,7 @@ export class Askform extends React.Component {
     
     askGua = e => {
         e.preventDefault();
-        axios.get("http://159.65.227.85:9000/api")
+        axios.get("https://ichingapi.herokuapp.com/api")
             .then( response => {
                 let results = response.data;
                 results.question = this.state.question;

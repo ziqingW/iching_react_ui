@@ -81,7 +81,7 @@ export class Login extends React.Component {
         e.preventDefault();
         let username = this.state.username;
         let password = this.state.password;
-        axios.post("http://159.65.227.85:9000/api_login", {username: username, password: password})
+        axios.post("https://ichingapi.herokuapp.com/api_login", {username: username, password: password})
             .then(response => {
                 let message = response.data.message;
                 if (message !== "Logged in"){
@@ -116,7 +116,7 @@ export class Login extends React.Component {
                 message : "Password not consistent"
             });
         } else {
-            axios.post("http://159.65.227.85:9000/api_signup", {username: username, password: password})
+            axios.post("https://ichingapi.herokuapp.com/api_signup", {username: username, password: password})
             .then(response => {
                 console.log(response.data);
                 let message = response.data.message;

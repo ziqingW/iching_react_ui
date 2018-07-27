@@ -57,10 +57,10 @@ export class Coins extends React.Component {
                         <h3>Symbol of <span className="tutorial-sub">Now</span></h3>
                         <p>You will toss 3 coins for 6 times, then draw the lines based on the following results from bottom to top:</p>
                         <ul>
-                            <li>3 heads <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> a straight line <span className="tutorial-warning">(*mutable)</span></li>
-                            <li>2 heads, 1 tail <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> a straight line</li>
-                            <li>2 tails, 1 head <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> a dashed line</li>
-                            <li>3 tails <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> a dashed line <span className="tutorial-warning">(*mutable)</span></li>
+                            <li>3 heads <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> &#x268A; <span className="tutorial-warning">(*mutable)</span></li>
+                            <li>2 heads, 1 tail <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> &#x268A;</li>
+                            <li>2 tails, 1 head <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> &#x268B;</li>
+                            <li>3 tails <FontAwesomeIcon icon="arrow-right" className="arrow-icon"/> &#x268B; <span className="tutorial-warning">(*mutable)</span></li>
                         </ul>
                         <p>Combine these lines, which is your first symbol representing Now.</p>
                     </div>

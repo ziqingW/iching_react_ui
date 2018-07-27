@@ -1,0 +1,49 @@
+/*history page*/
+.history-back {
+  display: flex;
+  overflow: scroll;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  width: 90%;
+  max-width: 900px;
+  height: 100%;
+  margin-top: -10px;
+}
+.history-back h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #808080;
+}
+.history-back table {
+  width: 100%;
+  margin-top: 1%;
+}
+.history-panel-head {
+  font-family: 'Roboto', sans-serif;
+  color: #689df2;
+}
+.history-panel-content {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9em;
+}
+.history-panel-content td {
+  text-align: center;
+}
+.history-gua p{
+  line-height: 16px;
+  margin: 0;
+}
+.history-gua a{
+  text-decoration: none;
+  color: #f45c42;
+}
+@media screen and (max-width: 500px) {
+    .history-panel-head {
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 500px) {
+  .history-panel-head {
+  font-size: 0.9em;
+  }
+}

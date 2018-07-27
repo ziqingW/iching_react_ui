@@ -45,7 +45,6 @@ export function guas (state, action) {
         }
       }
         new_state.coins = coinsResults;
-        console.log(new_state);
         return new_state;
     default:
       return state;

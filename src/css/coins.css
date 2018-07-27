@@ -20,7 +20,6 @@
   opacity: 0.9;
   border-radius: 5px;
   box-sizing: border-box;
-  margin-top: 12%;
   box-shadow: 1px 1px 5px #1A73E7;
   line-height: 22px;
   display: flex;
@@ -169,6 +168,9 @@
     .coin-img {
       width: 160px;
 }
+.tutorial-contents {
+  margin-top: 80px;
+}
 .final-button div {
   display: flex;
   flex-direction: column;
@@ -185,6 +187,9 @@
 }
 .question-icon:hover {
   cursor: pointer;
+}
+.tutorial-contents {
+  margin-top: 150px;
 }
 .tutorial-contents button:hover {
   cursor: pointer;

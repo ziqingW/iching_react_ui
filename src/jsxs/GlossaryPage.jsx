@@ -3,15 +3,16 @@ import { Link } from 'react-router-dom';
 import { Navigation } from './Navigation.jsx';
 import { Footer } from './Footer.jsx';
 import { Answer } from './Answer.jsx';
-import { Gua_detail } from './Gua_detail.jsx';
+import { GuaDetail } from './GuaDetail.jsx';
+import { User } from './User.jsx';
 import axios from 'axios';
 
 class Hexshow extends React.Component {
     render() {
-        return (this.props.gua == "hex" ?
+        return (this.props.gua === "hex" ?
             (<div className="detail-wrap">
                 <p>Hexagram&nbsp;<span className="gram-number"> No.{this.props.number}</span>: <Answer guas={this.props.guas}/></p>
-                    <Gua_detail guas={this.props.guas} />
+                    <GuaDetail guas={this.props.guas} />
                     <Link to="/glossary"><button className="glossary-btn">Back</button></Link>
             </div>)
             : null
@@ -21,7 +22,7 @@ class Hexshow extends React.Component {
 
 class Trishow extends React.Component {
     render() {
-        return (this.props.gua == "tri" ?
+        return (this.props.gua === "tri" ?
             (<div className="detail-wrap">
                 <p>Trigram&nbsp;<span className="gram-number"> No.{this.props.number}</span>: <span className="make-gua">{this.props.guas.character}</span></p>
                 <div className="guas-details-back">
@@ -40,7 +41,7 @@ class Trishow extends React.Component {
     }
 }
 
-export class Glossary_page extends React.Component {
+export class GlossaryPage extends React.Component {
     
     constructor (props) {
         super (props);
@@ -75,8 +76,9 @@ export class Glossary_page extends React.Component {
     render () {
         return (
             <div className="coin-back">
+                <User />
                 <Navigation />
-                    {this.state.gua == "hex"?
+                    {this.state.gua === "hex"?
                         <Hexshow gua={this.state.gua} number={this.state.number} guas={this.state.result} />
                         : <Trishow gua={this.state.gua} number={this.state.number} guas={this.state.result} />
                     }

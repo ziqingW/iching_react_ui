@@ -1,0 +1,115 @@
+/*glossary page*/
+.glossary-back {
+  flex-grow: 1;
+  width: 85%;
+  max-width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+.glossary-forms {
+  width: 100%;
+  max-width: 600px;
+ 
+}
+.glossary-back h3 {
+  width: 100%;
+  text-align: left;
+  color: #808080;
+}
+.glossary-forms>div {
+  display: flex;
+}
+.glossary-forms form {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.glossary-form-wrap {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+.glossary-form-wrap input {
+  width: 50%;
+  height: 30px;
+  padding: 3px;
+  text-align: right;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.glossary-form-wrap button {
+  width: 50px;
+  margin-left: 5%;
+  border: 1px solid #808080;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #757575;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  background: #eee;
+}
+.glossary-form-wrap button:hover{
+  cursor: pointer;
+  color: #1A73E8;
+  box-shadow: 1px 1px 3px #1A73E8;
+}
+.glossary-links {
+  margin-top:15%;
+  width: 100%;
+  padding: 0;
+}
+.glossary-links li{
+    margin: 10px 0;
+}
+.glossary-links a {
+  text-decoration: none;
+  color: #505050;
+  margin-bottom: 1%;
+}
+.glossary-links a:hover {
+  color: #1A73E8;
+}
+.detail-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.detail-wrap>p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+.gram-number {
+  color: #f45c42;
+}
+.detail-wrap a {
+  margin-top: 3%;
+}
+.glossary-btn {
+  width: 60px;
+  height: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  border: 2px solid green;
+  box-shadow: 1px 1px 3px #808080;
+  border-radius: 3px;
+  background: green;
+  color: white;
+}
+.glossary-btn:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}

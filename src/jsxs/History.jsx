@@ -1,9 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Navigation } from './Navigation.jsx';
 import { Link } from 'react-router-dom';
 import { Footer } from './Footer.jsx';
+import { User } from './User.jsx';
 import axios from 'axios';
 import clone from 'clone';
+import '../css/history.css';
 
 export class History extends React.Component {
     
@@ -19,7 +22,7 @@ export class History extends React.Component {
     }
     
     getHistory = () => {
-        axios.get("https://ichingapi.herokuapp.com/api_history")
+        axios.post("https://ichingapi.herokuapp.com/api_history", {userId: this.props.userId})
             .then(response => {
                 let history = clone(response.data);
                 this.setState({
@@ -34,6 +37,7 @@ export class History extends React.Component {
     render () {
         return (
             <div className="coin-back">
+                <User />
                 <Navigation />
                 <div className="history-back">
                     <h3>List of answered questions</h3>
@@ -75,3 +79,11 @@ export class History extends React.Component {
             </div>);
     }
 }
+
+function mapStateToProps(state) {
+    return {
+        userId : state.userId
+    };
+}
+
+History = connect(mapStateToProps)(History);

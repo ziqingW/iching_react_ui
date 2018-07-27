@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { Navigation } from './Navigation.jsx';
 import { Answer } from './Answer.jsx';
-import { Gua_detail } from './Gua_detail.jsx';
+import { GuaDetail } from './GuaDetail.jsx';
 import { Question } from './Question.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Footer } from './Footer.jsx';
-
+import { User } from './User.jsx';
+import '../css/results.css';
 
 export class Results extends React.Component {
     
@@ -40,8 +41,8 @@ export class Results extends React.Component {
                         <h3>Symbol of <span className="tutorial-sub">Future</span></h3>
                         <p>Those mutable lines (<span className="tutorial-warning">3 heads</span> or <span className="tutorial-warning">3 tails</span>) can turn to be their opposite form:</p>
                         <ul>
-                            <li><span className="tutorial-warning">3 heads</span> (straight line) will become a dashed line</li>
-                            <li><span className="tutorial-warning">3 tails</span> (dashed line) will become a straight line</li>
+                            <li><span className="tutorial-warning">3 heads</span> (&#x268A;) will become a dashed line</li>
+                            <li><span className="tutorial-warning">3 tails</span> (&#x268B;) will become a straight line</li>
                         </ul>
                         <p>Then, you will get another symbol representing Future.</p>
                     </div>
@@ -61,6 +62,7 @@ export class Results extends React.Component {
     render () {
         return (
             <div className="coin-back">
+                <User />
                 <Navigation />
                 <div className="question-panel">
                     <Question />
@@ -75,19 +77,19 @@ export class Results extends React.Component {
                                 <p>Now</p>
                                 <p className="results-gua"><Answer guas={this.props.guas} /></p>
                             </div>
-                            <div className={this.state.checked == "guas"? "result-modal result-checked": "result-modal"} onClick={()=>this.detail("guas")}></div>
+                            <div className={this.state.checked === "guas"? "result-modal result-checked": "result-modal"} onClick={()=>this.detail("guas")}></div>
                         </div>
                         <div className="result-single">
                             <div>
                                 <p>Future</p> 
                                 <p className="results-gua"><Answer guas={this.props.toGua} /></p>
                             </div>
-                            <div className={this.state.checked == "toGua"? "result-modal result-checked": "result-modal"} onClick={()=>this.detail("toGua")}></div>
+                            <div className={this.state.checked === "toGua"? "result-modal result-checked": "result-modal"} onClick={()=>this.detail("toGua")}></div>
                         </div>
                     </div>
                 </div>
-                {this.state.detailed !== "" ? (this.state.detailed == "guas" ? <Gua_detail guas={this.props.guas}/> 
-                : <Gua_detail guas={this.props.toGua}/>) : null}
+                {this.state.detailed !== "" ? (this.state.detailed === "guas" ? <GuaDetail guas={this.props.guas}/> 
+                : <GuaDetail guas={this.props.toGua}/>) : null}
                 <div className="detour_back"><h3>Satisfied with the answer? Let's try <Link to="/main">another one!</Link></h3></div>
                 <Footer />
             </div>);

@@ -1,6 +1,7 @@
 .user-panel {
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    max-width: 1200px;
     text-align: right;
     padding-top: 5px;
     padding-right: 30px;

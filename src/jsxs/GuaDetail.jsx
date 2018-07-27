@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export class Gua_detail extends React.Component {
+export class GuaDetail extends React.Component {
     
     render () {
         return (

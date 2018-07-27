@@ -13,7 +13,7 @@ import { Otherculture } from './jsxs/Otherculture.jsx';
 import { History } from './jsxs/History.jsx';
 import { Glossary } from './jsxs/Glossary.jsx';
 import { Login } from './jsxs/Login.jsx';
-import { Glossary_page } from './jsxs/Glossary_page.jsx';
+import { GlossaryPage } from './jsxs/GlossaryPage.jsx';
 
 library.add(faInfoCircle, faArrowRight );
 
@@ -32,7 +32,7 @@ class App extends React.Component {
     <Route exact path="/ask/results" component={ Results } />
     <Route path="/links" component={ Otherculture } />
     <Route path="/history" component={ History } />
-    <Route path="/glossary/:gua/:id" component={ Glossary_page } />
+    <Route path="/glossary/:gua/:id" component={ GlossaryPage } />
     <Route exact path="/glossary" component={ Glossary } />
     </Switch>
     </Provider>
