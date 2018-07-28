@@ -25,6 +25,9 @@ This is the work for the assigned individual project by DigitalCrafts.
 - After enormous attempts I still couldn't make both express_API and React_UI working together if I include them in one package
 - Eventually I overcame it by deploying two separate packages to heroku
 
+### Update Notes:
+7/27/2018   
+A fully update including Login/Signup system, personal inquery history review and device responding designs 
 ## Major Techs:
 - React
 - Redux
