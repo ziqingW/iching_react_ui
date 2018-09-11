@@ -102,7 +102,5 @@
 .main-option p {
   top: 7%;
 }
-.main a:hover {
-  filter: brightness(200%);
-}
+
 }
